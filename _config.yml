@@ -1,0 +1,10 @@
+# Site settings
+title: 'gdoros dev' # Your Title
+tagline: 'czyli how to code' # A brief tagline for your site
+sidebar_image: /images/photo.jpg
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+
+exclude: ["node_modules", "gulpfile.js", "package.json"]
