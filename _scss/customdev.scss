@@ -19,6 +19,20 @@
 .social
 {
   text-align: center;
+  margin-top:5px;
+}
+
+.social li a
+{
+  color: white;
+  text-decoration:  none;
+}
+
+.social li a:hover
+{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 5px 0px;
 }
 
 .social li{
