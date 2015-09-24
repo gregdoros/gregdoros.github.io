@@ -12,9 +12,9 @@ blog na darmowej, przerobionej templatce narazie musi wystarczyc.
 
 ## Trzeba skupic sie na technologicznej stronie tego przedswiezwiecia, brooo! Musze: ##
 
-1. Przerzucic sie na Sublime'a, atom mnie dobija.
-+. Nauczyc sie syntaxu.
-+. Dokonczyc szablon na stronie
-+. Zbudowac jekyllowo-gulpowy framework z sass, jade, js, autoprefixer, dobrym browser sync, dobrze poukladanymi folderami
-+. Przejsc na Yosemite bo walka z rubym pod windowsem to walka
+1.  Przerzucic sie na Sublime'a, atom mnie dobija.
+2.  Nauczyc sie syntaxu.
+3.  Dokonczyc szablon na stronie
+4.  Zbudowac jekyllowo-gulpowy framework z sass, jade, js, autoprefixer, dobrym browser sync, dobrze poukladanymi folderami
+5.  Przejsc na Yosemite bo walka z rubym pod windowsem to walka
 ##cy'a, bro!##
