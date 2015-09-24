@@ -17,5 +17,4 @@ blog na darmowej, przerobionej templatce narazie musi wystarczyc.
 3. Dokonczyc szablon na stronie
 4. Zbudowac jekyllowo-gulpowy framework z sass, jade, js, autoprefixer, dobrym browser sync, dobrze poukladanymi folderami
 5. Przejsc na Yosemite bo walka z rubym pod windowsem to walka
-
 ##cy'a, bro!##
