@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tag Archive
-description: "An archive of posts sorted by tag."
+title: Archiwum tagow
+description: "Archiwum postow posegregowanych po tagach"
 permalink: /tags.html
 ---
 

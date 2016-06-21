@@ -1,9 +1,9 @@
 # Site
 title: gregdoros
-description: Stylish, Two-Column Jekyll Theme
-url: http://taylantatli.me/Halve
+description: ohgod, tyle pracy
+url: http://gregdoros.github.io
 logo: halve.png                                       # Site logo
-locale: en_US
+locale: pl_PL
 
 # Left Block Images
 background:
@@ -29,17 +29,17 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
+email:             doros.grzegorz@gmail.com
 #google.plus:        username
-twitter:            username
-#facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+#twitter:            username
+facebook:           dorosgrzegorz
+github:             gregdoros
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          gregdoros
 #xing:              username
 #instagram:          username
 #lastfm:            username
-#tumblr:            username
+tumblr:            mrocznygrzes
 #pinterest:         username
 #foursquare:        username
 #steam:              username
@@ -52,7 +52,7 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
 # Gems
 gems:
