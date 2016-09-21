@@ -23,7 +23,7 @@ layout: compress
     </div>
 
   <div class="block-right">
-    <a title="project" class="projects-menu-icon">
+    <!-- <a title="project" class="projects-menu-icon">
       <span></span>
     </a>
     <span class="projects-link">PROJEKTY</span>
@@ -31,10 +31,10 @@ layout: compress
 
       <div class="about-info" style="box-sizing: border-box; text-align: center; height: 60vh">
         {{ content }}
-      </div>
-
+      </div> -->
+      <div class="content">
       <ul class="posts-list">
-      {% for post in site.posts %}
+      {% for post in site.posts limit: 5 %}
         <li>
           <h2>
             <a href="{{ site.url }}{{ post.url }}" class="post-title">

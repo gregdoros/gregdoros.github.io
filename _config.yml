@@ -54,6 +54,12 @@ tumblr:            mrocznygrzes
 #hackernews:        username
 #behance:           username
 
+# Comments
+comments:
+  provider: disqus
+disqus:
+  short_name: mrocznygrzes
+
 # Gems
 gems:
   - jekyll-feed
