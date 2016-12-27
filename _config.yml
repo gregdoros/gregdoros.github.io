@@ -1,71 +1,31 @@
-# Site
-title: gregdoros
-description: ohgod, tyle pracy
+title: gregdoros' blog
+description: Uczymy się pythona & django
+
 url: http://gregdoros.github.io
-logo: halve.png                                       # Site logo
-locale: pl_PL
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Left Block Images
-background:
-  homepage: images/home.png                           # this image will be shown on homepage's left block
-  post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
-  default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
 
-# Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-sass:
-  sass_dir:         assets/_sass
-  style:            compressed
+navigation:
+ - title: Główna
+   url: /index.html
+ - title: Artykuły      # Dopisujemy nazwę linka
+   url: /articles       # Dopisujemy ścieżkę
+ - title: O mnie
+   url: /about
+ - title: Kontakt
+   url: /contact
 
-# Google Analytics
-#google-analytics: UA-XXXXX-Y
 
-# Social Links
-email:             doros.grzegorz@gmail.com
-#google.plus:        username
-#twitter:            username
-facebook:           dorosgrzegorz
-github:             gregdoros
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          gregdoros
-#xing:              username
-#instagram:          username
-#lastfm:            username
-tumblr:            mrocznygrzes
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-#behance:           username
+social:
+   github: brianmaierjr
+   twitter: brianmaierjr
+   facebook: brianmaierjr
+   email: brimaidesigns@gmail.com
 
-# Comments
-comments:
-  provider: disqus
-disqus:
-  short_name: mrocznygrzes
-
-# Gems
-gems:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-
-# Exclude list
-include: [_pages]
-exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+google_analytics: "UA-58263416-1"
