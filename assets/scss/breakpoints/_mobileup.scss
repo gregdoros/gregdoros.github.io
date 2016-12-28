@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  margin: 0;
 	font-family: $serif;
 	line-height: 1.75;
 	font-size: 112.5%; // 18px base font size
@@ -40,7 +41,7 @@ img,video,audio,iframe,object{
 
 // Layout
 .container {
-	@include container(610px);
+	@include container(960px);
 	padding: 0 20px;
 }
 
@@ -214,8 +215,7 @@ POST STYLING
 
 	.postTitle {
 		text-align: center;
-		margin-top: 2rem;
-		margin-bottom: 1rem;
+    margin: 1rem auto;
 	}
 
 	blockquote {

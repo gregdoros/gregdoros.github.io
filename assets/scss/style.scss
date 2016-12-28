@@ -91,3 +91,27 @@
 .tag:hover::after {
    border-left-color: crimson;
 }
+
+.post p {
+  width: 90%
+}
+
+.post h1 {
+  width: 90%
+}
+
+.post h2 {
+  width: 90%
+}
+
+.post h3 {
+  width: 90%
+}
+
+.post h4 {
+  width: 90%
+}
+
+ul.posts.noList {
+  width: 90% !important;
+}
