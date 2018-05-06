@@ -1,0 +1,40 @@
+#about {
+    width: 100%;
+    background-color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3em 4em;
+}
+
+#about .btn {
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.me-mini {
+    width: 250px;
+    height: 250px;
+    border-radius: 0;
+}
+
+.h1-about {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@media(max-width: 350px) {
+    .me-mini {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,13 @@
+#main-footer{
+    background-color: #4B4E57;
+    color: #F6F6F6;
+    text-align: center;
+    padding: 3em 0;
+}
+
+#main-footer p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 0.8;
+}

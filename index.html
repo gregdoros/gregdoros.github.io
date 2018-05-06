@@ -1,27 +1,129 @@
----
-layout: default
-title: Nauka pythona & djano!
----
+<!DOCTYPE html>
+<html lang="pl">
 
-<div class="home" id="home">
-  <h1 class="pageTitle">Najnowsze posty</h1>
-  <ul class="posts noList">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 100 }}{% endif %}</p>
-      </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grzegorz @gregdoros Doroś portoflio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    {% endfor %}
-  </ul>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a>
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
-    {% endif %}
-  </div>
-</div>
+<body>
+    <header id="main-header">
+        <div class="bg-image"></div>
+        <h2>Cześć, jestem</h2>
+        <img class="me-mini" src="imgs/me_mini.jpg" alt="">
+        <h1>Grzegorz Doroś</h1>
+        <h3>@gregdoros</h3>
+        <h4>front-end web developer</h4>
+        <a href="about.html" class="btn more-about-me">Więcej o mnie</a>
+    </header>
+    <section id="portfolio">
+        <h1 class="section-h1">Portfolio</h1>
+        <div class="portfolio-images">
+
+
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+            <a class="portfolio-item" href="project.html">
+                <img src="https://bytesflow.com/wp-content/uploads/2017/02/webapp_dev.jpg" alt="">
+                <div class="portfolio-item-desc">
+                    <h1>PROJECT NAME</h1>
+                </div>
+            </a>
+        </div>
+        <button id="load-more" class="btn">Zobacz więcej</button>
+    </section>
+    <section id="social-icons">
+        <ul>
+            <li>
+                <a class="fb" href="#"></a>
+            </li>
+            <li>
+                <a class="ln" href="#"></a>
+            </li>
+            <li>
+                <a class="tw" href="#"></a>
+            </li>
+        </ul>
+    </section>
+    <footer id="main-footer">
+        <p>2018 gregdoros</p>
+        <p>gregdoros@gmail.com</p>
+    </footer>
+
+    <script>
+
+        var parent = document.querySelector('.portfolio-images'),
+            items = parent.querySelectorAll('.portfolio-item'),
+            loadMoreBtn = document.querySelector('#load-more'),
+            maxItems = 4,
+            hiddenClass = 'visually-hidden';
+
+        [].forEach.call(items, function (item, idx) {
+            if (idx > maxItems - 1) {
+                item.classList.add(hiddenClass);
+            }
+        });
+
+        loadMoreBtn.addEventListener('click', function () {
+            [].forEach.call(document.querySelectorAll('.' + hiddenClass),
+                function (item, idx) {
+                    console.log(item);
+                    if (idx < maxItems - 2) {
+                        item.classList.remove(hiddenClass);
+                    console.log(document.querySelectorAll('.' + hiddenClass));
+                    }
+                    if (document.querySelectorAll('.' + hiddenClass).length === 0) {
+                        loadMoreBtn.classList.add(hiddenClass);
+                    }
+                });
+        });
+
+    </script>
+</body>
+
+</html>

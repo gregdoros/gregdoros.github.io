@@ -1,0 +1,52 @@
+#social-icons{
+    color: #f3f3f3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3em 0;
+    background-color: #EFEFEF;
+}
+
+#social-icons ul{
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#social-icons ul li{
+    display: inline-block;
+}
+
+.fb, .tw, .ln{
+    height: 43px;
+    width: 43px;
+    padding: 0;
+    margin: 0 1em;
+    display: inline-block;
+    background-color: #4B4E57;
+    opacity: 0.5;
+}
+
+.fb{
+    -webkit-mask: url('../imgs/social-icons/fb.svg');
+    mask: url('../imgs/social-icons/fb.svg');
+}
+
+.fb:hover,
+.ln:hover,
+.tw:hover{
+    opacity: 0.9;
+}
+
+.ln{
+    -webkit-mask: url('../imgs/social-icons/ln.svg');
+    mask: url('../imgs/social-icons/ln.svg');
+}
+
+.tw{
+    -webkit-mask: url('../imgs/social-icons/tw.svg');
+    mask: url('../imgs/social-icons/tw.svg');
+}
+        
